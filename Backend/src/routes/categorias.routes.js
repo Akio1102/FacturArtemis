@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { getCategorias } from "../controllers/categoria.controllers.js";
+import { methodsHTTP } from "../controllers/categoria.controllers.js";
 
 const router = Router();
 
-router.get("/", getCategorias);
+router.get("/", methodsHTTP.getCategorias);
 
 export default router;
