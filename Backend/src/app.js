@@ -2,8 +2,14 @@ import express from "express";
 import categoriaRoutes from "./routes/categorias.routes.js";
 
 const app = express();
-const puerto = 7000;
+const puerto = 4000;
 
+//Port
 app.set("PORT", puerto);
-app.use("/api/categorias", categoriaRoutes);
+
+//MiddleWare
+app.use(express.json());
+
+//Routes
+app.use(categoriaRoutes);
 export default app;

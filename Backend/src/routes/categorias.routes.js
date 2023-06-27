@@ -1,8 +1,12 @@
 import { Router } from "express";
-import { methodsHTTP } from "../controllers/categoria.controllers.js";
+import {
+  getCategorias,
+  postCategorias,
+} from "../controllers/categoria.controllers.js";
 
 const router = Router();
 
-router.get("/", methodsHTTP.getCategorias);
+router.get("/api/categorias", getCategorias);
+router.post("/api/categorias", postCategorias);
 
 export default router;
