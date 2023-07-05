@@ -12,4 +12,11 @@ const getConnection = () => {
   return connection;
 };
 
-export default getConnection;
+const Querys = async (res, sqlQuery) => {
+  const connection = await getConnection();
+  const result = await connection.query(...sqlQuery);
+  console.log(result);
+  res.json(result);
+};
+
+export default Querys;
