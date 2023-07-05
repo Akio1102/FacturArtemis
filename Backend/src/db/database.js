@@ -13,10 +13,16 @@ const getConnection = () => {
 };
 
 const Querys = async (res, sqlQuery) => {
-  const connection = await getConnection();
-  const result = await connection.query(...sqlQuery);
-  console.log(result);
-  res.json(result);
+  try {
+    const connection = await getConnection();
+    const result = await connection.query(...sqlQuery);
+    console.log(result);
+    res.status(200);
+    res.json(result);
+  } catch (error) {
+    res.status(500);
+    res.send(error.message);
+  }
 };
 
 export default Querys;

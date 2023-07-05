@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   getCategorias,
-  getCategoria,
+  getCategoriaID,
   postCategoria,
   putCategoria,
   deleteCategorias,
@@ -10,7 +10,7 @@ import {
 const router = Router();
 
 router.get("/api/categorias", getCategorias);
-router.get("/api/categorias/:id", getCategoria);
+router.get("/api/categorias/:id", getCategoriaID);
 router.post("/api/categorias", postCategoria);
 router.put("/api/categorias/:id", putCategoria);
 router.delete("/api/categorias/:id", deleteCategorias);
