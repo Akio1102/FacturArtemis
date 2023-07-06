@@ -1,4 +1,4 @@
-import { GETCategorias } from "../API/API.js";
+import { GETCategorias } from "../API/consumoAPI.js";
 import { RowCategories } from "../Components/RowCategories.js";
 
 const categories = document.querySelector("#categories");
