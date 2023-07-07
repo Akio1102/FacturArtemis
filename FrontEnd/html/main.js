@@ -1,15 +1,17 @@
-import { Categories } from "./render.js";
-import { POSTCategoria, DELETECategoria } from "../API/consumoAPI.js";
+import { Categories } from "../Views/Categorias.js";
 
 window.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
   Categories();
 
-  const myData = document.querySelector("#categories");
+  const myData = document.querySelector(".elimina");
   myData.addEventListener("click", (e) => {
     e.preventDefault();
+    let myData = myData.getAttribute("id");
+    console.log(e);
     const action = e.target.dataset.accion;
     const container = e.target.closest(".tr");
+
     console.log(container);
     const id = container.getAttribute("id");
     console.log(id);

@@ -1,4 +1,8 @@
-import { GETCategorias } from "../API/consumoAPI.js";
+import {
+  GETCategorias,
+  POSTCategoria,
+  DELETECategoria,
+} from "../API/consumoAPI.js";
 import { RowCategories } from "../Components/RowCategories.js";
 
 const categories = document.querySelector("#categories");
@@ -11,7 +15,6 @@ export function Categories() {
 async function viewCategories() {
   try {
     let categories = await GETCategorias();
-    console.log(categories);
     if (categories == false) {
       alert(`No hay Categorias`);
     } else {
