@@ -67,32 +67,32 @@
                       >
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
+                      <a class="nav-link active" aria-current="page" href="categorias.html">
                         <i class="bi bi-tag-fill"></i> Categorias
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="productos.html">
                         <i class="bi bi-bag-fill"></i> Productos
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="clientes.html">
                         <i class="bi bi-people"></i> Clientes
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="empleados.html">
                         <i class="bi bi-person-vcard-fill"></i> Empleados
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="proveedores.html">
                         <i class="bi bi-person-heart"> </i>Proveedores
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="facturas.html">
                         <i class="bi bi-receipt-cutoff"></i> Facturas
                       </a>
                     </li>
@@ -105,14 +105,10 @@
       </section>
     </header>
     <!-- Button trigger modal -->
-    <div class="container-fluid">
-      <button
-        type="button"
-        class="btn btn-primary"
-        data-bs-toggle="modal"
-        data-bs-target="#addCategorias"
-      >
-        Agregar Categoria
+    <div class="button-modal container-fluid">
+
+      <i class="plus bi bi-plus-circle fs-1 text-white" data-bs-toggle="modal"data-bs-target="#addCategorias" type="button" ></i>
+
       </button>
     </div>
 
@@ -180,7 +176,7 @@
                       Imagen
                     </label>
                     <input
-                      type="text"
+                      type="file"
                       class="form-control"
                       id="inputImagen"
                       placeholder="Ingresa La imagen de la categoria"

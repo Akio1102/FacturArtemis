@@ -36,14 +36,14 @@ body {
 }
 
 th {
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   text-align: center !important;
   width: 1rem;
   color: white;
 }
 
 tbody {
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center !important;
   color: white;
 }
@@ -53,4 +53,11 @@ tbody {
   margin-top: 4rem;
   /* border: 2px solid #d42828;
      */
+}
+
+.button-modal {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
 }

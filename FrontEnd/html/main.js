@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
       DELETECategoria(container, id);
       alert("Categoría borrada");
     }
-  });
+  }); 
 });
 
 let myFormCategoria = document.querySelector(`#myFormCategoria`);
